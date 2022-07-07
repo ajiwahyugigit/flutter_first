@@ -14,14 +14,20 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Hallo World!"),
           backgroundColor: Colors.red,
-          actions: <Widget>[
-            IconButton(onPressed: () {}, icon: Icon(Icons.mail_outline))
-          ],
         ),
         body: SafeArea(
-            child: Image(
-          image: AssetImage('assets/images/pp.jpeg'),
-        )),
+          child: Container(
+            child: Column(
+              children: <Widget>[
+                Image(
+                  image: AssetImage('assets/images/pp.jpeg'),
+                  height: 240,
+                ),
+                Text("PT. TELKOM INDONESIA"),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }
