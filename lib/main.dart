@@ -18,6 +18,10 @@ class MyApp extends StatelessWidget {
             IconButton(onPressed: () {}, icon: Icon(Icons.mail_outline))
           ],
         ),
+        body: SafeArea(
+            child: Image(
+          image: AssetImage('assets/images/pp.jpeg'),
+        )),
       ),
     );
   }
